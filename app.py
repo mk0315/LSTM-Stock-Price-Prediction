@@ -11,7 +11,7 @@ end = '2024-04-08'
 
 st.title('Stock Trend Predictor📈📉')
 
-user_input = st.text_input('Enter Stock ticker', 'AAPL')
+user_input = st.text_input('Enter Stock ticker', 'TSLA')
 
 df = data.get_data_tiingo(user_input, api_key='cd979b3785f284399d665e0f55251c969f818226', start=start, end=end)
 df = df.reset_index()
